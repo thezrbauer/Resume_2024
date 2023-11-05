@@ -1,0 +1,18 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+.introduction{
+    background-color: red;
+}
+.contact{
+    background-color: blue;
+}
+.job-experience{
+    background-color: white;
+}
+.skills{
+    background-color: gray;
+}
