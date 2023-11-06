@@ -4,15 +4,86 @@
   box-sizing: border-box;
 }
 
+main {
+    margin:auto;
+    height:297mm;
+    width:210mm;
+    font-size:0;
+    background-color: black;
+}
+main > div {
+    font-size: 1rem; display:grid;
+}
+
+h1, h2, h3 {
+    margin:0;
+    padding:0;
+}
+
+ul {
+    list-style:none;
+    margin:auto;
+}
+
+li {
+    display:inline-block;
+    justify-content: space-between;
+    margin-right:40px;
+    background-color: aquamarine;
+    font-size:18px;
+}
+
+/*Removes space between div due to font size */
 .introduction{
+    background-color: lightskyblue;
+    padding:1rem;
+    }
+.introduction > h1 {
+    font-size:32px;
+     
     background-color: red;
+}    
+.introduction > h2 {
+    font-size:18px;  
+    background-color: beige;  
+}
+.introduction > p {
+    font-size:14px;
+    background-color: teal; 
 }
 .contact{
-    background-color: blue;
+    background-color: lightsalmon;
+    height:auto;
+
 }
-.job-experience{
-    background-color: white;
+.row {display:flex;}
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+    width: 50%;
+   
+ 
+
+  }
+  
+
+
+
+
+
+
+
+
+
+.work_experience{
+    background-color: whitesmoke;
+}
+
+.work_experience> ul {
+    display:grid;
 }
 .skills{
-    background-color: gray;
+    background-color: whitesmoke;
 }
+
