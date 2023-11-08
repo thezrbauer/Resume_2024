@@ -56,14 +56,16 @@ li {
     height:auto;
 
 }
-.row {display:flex;}
+.row {
+    display:flex;
+}
 
 
 /* Create two equal columns that floats next to each other */
 .column {
     width: 50%;
-   
- 
+    max-height:297mm;
+
 
   }
   
