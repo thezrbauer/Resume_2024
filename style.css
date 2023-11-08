@@ -4,15 +4,40 @@
   box-sizing: border-box;
 }
 
+:root {
+    --intro-bg: rgb(59, 94, 128);
+    --accent-txt: #10704a;
+    
+}
+
+/*#3ce3b4 ,
+#f4dcbb,
+#617d88,
+ #b6d6d2,
+#344e6c   */
+
 main {
     margin:auto;
-    height:297mm;
-    width:210mm;
+   	/* Styles for better appearance on screens only -- are reset to defaults in print styles later */
+
+	/* Reflect the paper width in the screen rendering (must match size from @page rule) */
+	width: 21cm;
+	/* Reflect the paper height in the screen rendering (must match size from @page rule) */
+	min-height: 29.7cm;
+
+	/* Reflect the actual page margin/padding on paper in the screen rendering (must match margin from @page rule) */
+ 
     font-size:0;
-    background-color: black;
+    font-family:'Times New Roman', Times, serif;
+    background-color: rgb(241, 241, 241);
+
+
+    
 }
+
+
 main > div {
-    font-size: 1rem; display:grid;
+    font-size: .8rem; display:grid;
 }
 
 h1, h2, h3 {
@@ -29,63 +54,62 @@ li {
     display:inline-block;
     justify-content: space-between;
     margin-right:40px;
-    background-color: aquamarine;
     font-size:18px;
 }
 
+
+.section {
+    font-size:12px;
+   
+}
+
+.title {
+    font-size:24px;
+    color:var(--accent-txt)
+}
 /*Removes space between div due to font size */
 .introduction{
-    background-color: lightskyblue;
+    background-color:var(--intro-bg);
     padding:1rem;
-    }
+    color:white;
+ 
+}
+
 .introduction > h1 {
     font-size:32px;
-     
-    background-color: red;
+  
 }    
 .introduction > h2 {
     font-size:18px;  
-    background-color: beige;  
+    
 }
 .introduction > p {
     font-size:14px;
-    background-color: teal; 
+ 
 }
 .contact{
-    background-color: lightsalmon;
+    background-color: #3f3b37;
     height:auto;
-
+    color:white;
 }
+
 .row {
     display:flex;
+    padding:1.2rem;
+    min-height:29.8cm;
 }
 
 
 /* Create two equal columns that floats next to each other */
 .column {
     width: 50%;
-    max-height:297mm;
-
-
-  }
+    color:black;
+}
   
 
-
-
-
-
-
-
-
-
-.work_experience{
-    background-color: whitesmoke;
-}
 
 .work_experience> ul {
     display:grid;
 }
-.skills{
-    background-color: whitesmoke;
-}
+
 
