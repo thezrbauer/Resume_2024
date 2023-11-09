@@ -37,7 +37,7 @@ main {
 
 
 main > div {
-    font-size: .8rem; display:grid;
+    font-size: .9rem; display:grid;
 }
 
 h1, h2, h3 {
@@ -45,28 +45,11 @@ h1, h2, h3 {
     padding:0;
 }
 
-ul {
-    list-style:none;
-    margin:auto;
-}
-
-li {
-    display:inline-block;
-    justify-content: space-between;
-    margin-right:40px;
-    font-size:18px;
-}
-
-
 .section {
-    font-size:12px;
-   
+    font-size:12px;   
 }
 
-.title {
-    font-size:24px;
-    color:var(--accent-txt)
-}
+
 /*Removes space between div due to font size */
 .introduction{
     background-color:var(--intro-bg);
@@ -107,9 +90,32 @@ li {
 }
   
 
+.title {
+    font-size:24px;
+    color:var(--accent-txt);
+    margin:auto;
+    padding-bottom:.5rem;
+    text-decoration:underline 3px;
 
-.work_experience> ul {
-    display:grid;
+}
+
+.card {
+   font-size:12px;
+   margin-top:10px;
+   margin-bottom:10px;
+   background-color: antiquewhite;
+   padding:4px;
 }
 
 
+
+.listdiv > ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+
+.listdiv > ul > li {
+    font-size:18px;
+    line-height:24px;
+}
