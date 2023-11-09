@@ -6,8 +6,8 @@
 
 :root {
     --intro-bg: rgb(59, 94, 128);
-    --accent-txt: #10704a;
-    
+    --accent-txt: #36a377;
+
 }
 
 /*#3ce3b4 ,
@@ -40,9 +40,17 @@ main > div {
     font-size: .9rem; display:grid;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     margin:0;
     padding:0;
+}
+
+h4 {
+    color:var(--accent-txt);
+    margin-top:6px;
+    margin-bottom:6px;
+    font-size:8px;
+ 
 }
 
 .section {
@@ -76,17 +84,30 @@ h1, h2, h3 {
     color:white;
 }
 
+.contact > ul {
+    list-style:none;
+    display:flex;
+    margin:auto;
+}
+
+.contact > ul > li {
+    padding-inline:20px;
+    font-size:16px;
+}
+
+
 .row {
     display:flex;
     padding:1.2rem;
     min-height:29.8cm;
+    
+  
 }
-
 
 /* Create two equal columns that floats next to each other */
 .column {
     width: 50%;
-    color:black;
+    background-color: bisque;
 }
   
 
@@ -103,8 +124,8 @@ h1, h2, h3 {
    font-size:12px;
    margin-top:10px;
    margin-bottom:10px;
-   background-color: antiquewhite;
-   padding:4px;
+   padding:0px 4px 0px 4px;
+   background-color:lightcoral;
 }
 
 
@@ -116,6 +137,6 @@ h1, h2, h3 {
 }
 
 .listdiv > ul > li {
-    font-size:18px;
-    line-height:24px;
+    font-size:14px;
+    line-height:20px;
 }
