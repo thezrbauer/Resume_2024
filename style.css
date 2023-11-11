@@ -24,7 +24,7 @@ main {
 	width: 21cm;
 	/* Reflect the paper height in the screen rendering (must match size from @page rule) */
 	min-height: 29.7cm;
-
+    max-height: 29.7cm;
 	/* Reflect the actual page margin/padding on paper in the screen rendering (must match margin from @page rule) */
  
     font-size:0;
@@ -138,20 +138,43 @@ h4 {
 }
 
 /* maybe try 3 sets of inline divs over top of each other instead of a grid */
-.xpbox {
+.ex1, .ex2, .ex3 {
    
         display: grid;
         grid-template-columns: auto auto;
         justify-content:flex-start; 
-        align-items:baseline;
-        gap:4px;
+        padding:3px;
+        gap:5px;
 }
 
 .expertise {
     background-color: var(--accent-txt);
     padding:5px;
-    margin:auto;
     border-radius:2px;
     font-size:18px;
 }
 
+.interests {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content:flex-start; 
+    gap:10px;
+}
+
+.interests > div {
+    display:flex;
+    background-color: #36a377;
+    border-radius:2px;
+    font-size:18px;
+ 
+}
+
+.interests > div > span {
+    background-color: yellowgreen;
+    margin:auto;
+}
+
+.interests > div > p {
+    background-color: orange;
+    margin:10px;
+}
