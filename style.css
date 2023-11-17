@@ -5,9 +5,11 @@
 }
 
 :root {
-    --intro-bg: rgb(59, 94, 128);
-    --accent-txt: #36a377;
+    /* --intro-bg: rgb(59, 94, 128);
+    --accent-txt: #36a377; */
 
+       --intro-bg: rgb(46, 80, 95);
+    --accent-txt: #389c74;
 }
 
 /*#3ce3b4 ,
@@ -16,14 +18,17 @@
  #b6d6d2,
 #344e6c   
 #304145 dark green
-#15a083
+#15a083 emerald green
 #bac7ce grayish
 #e5e6e1 another gray
+#2a2e2d dark gray
 #3f3b37 almost black
 #2b2741 navy
+#e5e7e7 ivory
 #6a4952 modern maroon
 #303e4c steel blue
-#0d8fcd  classic blue*/
+#0d8fcd  classic blue
+#043442 deep teal*/
 
 main {
     margin:auto;
