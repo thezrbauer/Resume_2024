@@ -6,10 +6,12 @@
 
 :root {
     /* --intro-bg: rgb(59, 94, 128);
-    --accent-txt: #36a377; */
+    --accent-txt: #36a377; 
+     --banner-color:#3f3b37;*/
 
-       --intro-bg: rgb(46, 80, 95);
+       --intro-bg: rgb(40, 105, 133);
     --accent-txt: #389c74;
+    --banner-color:#3f3b37;
 }
 
 /*#3ce3b4 ,
@@ -89,7 +91,7 @@ h4 {
  
 }
 .contact{
-    background-color: #3f3b37;
+    background-color: var(--banner-color);
     height:auto;
     color:white;
 }
@@ -144,15 +146,17 @@ h4 {
    margin-top:10px;
    margin-bottom:10px;
    padding:0px 4px 0px 4px;
-
+  
 }
 
 
 
 .listdiv > ul {
-    list-style:none;
+    list-style:var(--accent-txt);
     margin:0;
     padding:0;
+    padding-left:12px;
+    
 }
 
 .listdiv > ul > li {
@@ -177,6 +181,14 @@ h4 {
     border-radius:2px;
     font-size:18px;
     color:white;
+}
+
+.techSkills > h3 {
+    font-size:15px;
+}
+
+.techSkills > p {
+    font-size:14px;
 }
 
 .interests {
