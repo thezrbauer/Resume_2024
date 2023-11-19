@@ -47,7 +47,7 @@ main {
     font-family:'Times New Roman', Times, serif;
     background-color: rgb(241, 241, 241);
 
-
+    page-break-inside: avoid;
     
 }
 
@@ -189,6 +189,7 @@ h4 {
 
 .techSkills > p {
     font-size:14px;
+    line-height: 20px;
 }
 
 .interests {
