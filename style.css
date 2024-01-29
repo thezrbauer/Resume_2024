@@ -34,21 +34,13 @@
 
 main {
     margin:auto;
-   	/* Styles for better appearance on screens only -- are reset to defaults in print styles later */
-
-	/* Reflect the paper width in the screen rendering (must match size from @page rule) */
-	width: 21cm;
-	/* Reflect the paper height in the screen rendering (must match size from @page rule) */
-	min-height: 29.7cm;
-    max-height: 29.7cm;
-	/* Reflect the actual page margin/padding on paper in the screen rendering (must match margin from @page rule) */
- 
+	width: 20.6cm;
+	min-height: 28.6cm;
+    max-height: 28.6cm;
     font-size:0;
     font-family:'Times New Roman', Times, serif;
     background-color: rgb(241, 241, 241);
-
     page-break-inside: avoid;
-    
 }
 
 
@@ -73,9 +65,8 @@ h4 {
 /*Removes space between div due to font size */
 .introduction{
     background-color:var(--intro-bg);
-    padding:1.2rem;
     color:white;
- 
+    padding:1.2rem 1.2rem .5rem 1.2rem;
 }
 
 .introduction > h1 {
@@ -88,7 +79,7 @@ h4 {
 }
 .introduction > p {
     font-size:14px;
- 
+    line-height:20px;
 }
 .contact{
     background-color: var(--banner-color);
@@ -128,27 +119,29 @@ h4 {
 /* Create two equal columns that floats next to each other */
 .column {
     width: 50%;
- 
+    margin:2px;
 }
 
 
 .title {
     font-size:22px;
     color:var(--accent-txt);
-    padding-bottom:.5rem;
+    padding-bottom:.3rem;
     text-decoration:underline 3px;
 
 }
 
 .card {
    font-size:12px;
-   margin-top:10px;
-   margin-bottom:10px;
+   margin-top:8px;
+   margin-bottom:9px;
    padding:0px 4px 0px 4px;
   
 }
 
-
+.card > h4 {
+    margin:4px 0px;
+}
 
 .listdiv > ul {
     list-style:var(--accent-txt);
@@ -185,26 +178,28 @@ h4 {
 
 .techSkills > h3 {
     font-size:15px;
+
 }
 
 .techSkills > p {
     font-size:14px;
-    line-height: 20px;
+    line-height: 18px;
 }
 
 .interests {
     display: grid;
     grid-template-columns: auto auto;
     justify-content:flex-start; 
-    gap:20px;
+    
 }
 
 .interests > div {
     display:flex;
     border-radius:2px;
     font-size:20px;
-    width:8rem;
-   
+    width:10rem;
+    font-size:20px;
+
 }
 
 .interests > div > span {
@@ -214,7 +209,6 @@ h4 {
 }
 
 .interests > div > p {
-   
     margin:10px;
 }
 
